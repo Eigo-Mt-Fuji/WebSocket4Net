@@ -155,7 +155,7 @@ namespace WebSocket4Net.Protocol
                 handshakeBuilder.AppendFormatWithCrCf("GET {0} HTTP/1.1", websocket.TargetUri.ToString());
             }
 
-            handshakeBuilder.AppendWithCrCf("Upgrade: WebSocket");
+            handshakeBuilder.AppendWithCrCf("Upgrade: websocket");
             handshakeBuilder.AppendWithCrCf("Connection: Upgrade");
             handshakeBuilder.Append("Sec-WebSocket-Key1: ");
             handshakeBuilder.AppendWithCrCf(secKey1);
